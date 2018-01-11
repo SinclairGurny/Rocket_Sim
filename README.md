@@ -2,8 +2,7 @@
 
 ## Purpose:
 
-This simulation was made in ~1 week to help me better understand orbital mechanics. It is a stepping stone to more advanced programs I want to work on for other things (Kerbal Space Program).
-This simulation models the motion of one rocket/satellite in orbit around the Earth. The math is using real values and calculating orbits in realtime. The default values have a rocket orbiting at the approximate altitude of the ISS (400km).
+This simulation was made in ~1 week to help me better understand orbital mechanics. It is a stepping stone to more advanced programs I want to work on for other things (Kerbal Space Program). This simulation models the motion of one rocket/satellite in orbit around the Earth. The math is using real values and calculating orbits in realtime. The kinematics is done in polar coordinates. Two sources that helped me: http://www.braeunig.us/space/orbmech.htm, http://evgenii.com/blog/earth-orbit-simulation/. The former was used for all the equations, the latter was only used for the polar coordinate kinematic equations.
 
 ## Using the Simulator:
 
@@ -19,6 +18,8 @@ Z - Zoom In
 X - Zoom Out
 
 R - Reset Speed and Scale
+
+P - save screenshot
 
 SPACE - Toggle Engine
 
@@ -41,3 +42,7 @@ Lower Right -
 
 Center -
     Earth with satellite orbiting
+    
+## Future Improvements:
+
+Adding more satellites by leveraging threading to improve framerate and accuracy. Add orbit perturbations, or ability to launch from ground. Rotate Earth. If you have any other ideas, feel free to tell me.
