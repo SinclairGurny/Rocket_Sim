@@ -1,6 +1,6 @@
 # Rocket_Sim
 
-[img]: https://github.com/SinclairGurny/Rocket_Sim/blob/master/screenshot5758.png "Screenshot"
+![logo](https://github.com/SinclairGurny/Rocket_Sim/blob/master/screenshot5758.png)
 
 ## Purpose:
 
