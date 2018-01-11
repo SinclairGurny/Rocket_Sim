@@ -45,10 +45,10 @@ void orbit( Rocket r ) {
       r.e = ( r.Pe.r * vp * vp ) / r.earth.GM() - 1.0;
       // True Anomaly
       double tanv = (( tmp1 * sing * cosg ) / ( (tmp1 * sing * sing) - 1 ));
-      //r.v = -Math.atan( tanv ) + r.location.o + Math.PI/2.0;
-      r.v = -Math.atan( tanv ) + Math.PI/2.0;
+      r.v = -Math.atan( tanv ) + r.location.o + Math.PI/2.0;
+      //r.v = -Math.atan( tanv ) + Math.PI/2.0;
       //r.v = -Math.atan( tanv ) + r.location.o;
-      //r.orbit_good = true;
+      r.orbit_good = true;
     }
     Ellipse( r.Pe, r.Ap, r.e, r.v );
   }

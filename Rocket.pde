@@ -23,8 +23,8 @@ class Rocket {
     Pe = new Vector2();
     Ap = new Vector2();
     
-    orientation = HALF_PI; // zenith angle
-    location = new Vector2( earth.radius + 400000, 0 );
+    orientation = Math.PI/2.0; // zenith angle
+    location = new Vector2( earth.radius + 400000, Math.PI );
     double velmag = 7668.55704; //*/5589.937;
     double vr = velmag * Math.cos( orientation );
     double vo = ( velmag * Math.sin( orientation ) ) / location.r;
@@ -87,10 +87,6 @@ class Rocket {
        double amag = 10; // m/s^s
        t.r = amag * Math.cos( orientation );
        t.o = ( amag * Math.sin( orientation ) ) / location.r;
-       //t.rotate( -orientation );
-       println( "O: " + orientation );
-       println( "VR: " + t.r );
-       println( "VO: " + t.o );
        orbit_good = false;
      }
      return t;
