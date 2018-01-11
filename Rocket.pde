@@ -24,8 +24,8 @@ class Rocket {
     Ap = new Vector2();
     
     orientation = Math.PI/2.0; // zenith angle
-    location = new Vector2( earth.radius + 400000, Math.PI );
-    double velmag = 7668.55704; //*/5589.937;
+    location = new Vector2( earth.radius + 400000, 0 );
+    double velmag = 7668.55704;
     double vr = velmag * Math.cos( orientation );
     double vo = ( velmag * Math.sin( orientation ) ) / location.r;
     velocity = new Vector2( vr, vo );
